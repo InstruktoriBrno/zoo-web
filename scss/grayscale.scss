@@ -471,13 +471,31 @@ img::-moz-selection {
   background: url('../img/uvodni.png') no-repeat center center scroll;
   background-size: contain;
   background-color: #00a1ff;
-  height: 80%;
+  height: 60%;
 }
 
 .bg-img-section {
   background: url('../img/tygr.png') no-repeat center center scroll;
   background-size: cover;
-  height: 50%;
+  height: 25%;
+}
+
+.bg-img-section-tygr {
+  background: url('../img/tygr.png') no-repeat center center scroll;
+  background-size: cover;
+  height: 25%;
+}
+
+.bg-img-section-slon {
+  background: url('../img/slon.png') no-repeat center center scroll;
+  background-size: cover;
+  height: 25%;
+}
+
+.bg-img-section-krokodyl {
+  background: url('../img/krokodyl.png') no-repeat center center scroll;
+  background-size: cover;
+  height: 25%;
 }
 
 .komiks {
