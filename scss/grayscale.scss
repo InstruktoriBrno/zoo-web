@@ -471,33 +471,34 @@ img::-moz-selection {
   background: url('../img/uvodni.png') no-repeat center center scroll;
   background-size: cover;
   background-color: #00a1ff;
-  height: 80%;
+  height: 100%;
 }
 
 .bg-img-section {
   background: url('../img/tygr.png') no-repeat center center scroll;
   background-size: cover;
+  background-position: left;
   height: 20%;
 }
 
 .bg-img-section-tygr {
   background: url('../img/tygr.png') no-repeat center center scroll;
   background-size: cover;
-  float: right;
+  background-position: left;
   height: 20%;
 }
 
 .bg-img-section-slon {
   background: url('../img/slon.png') no-repeat center center scroll;
-  background-size: cover;
-  float: left;
+  background-size: cover;  
+  background-position: left;
   height: 20%;
 }
 
 .bg-img-section-krokodyl {
   background: url('../img/krokodyl.png') no-repeat center center scroll;
   background-size: cover;
-  float: right;
+  background-position: left;
   height: 20%;
 }
 
