@@ -474,17 +474,10 @@ img::-moz-selection {
   height: 100%;
 }
 
-.bg-img-section {
-  background: url('../img/tygr.png') no-repeat center center scroll;
-  background-size: cover;
-  background-position: left;
-  height: 20%;
-}
-
 .bg-img-section-tygr {
   background: url('../img/tygr.png') no-repeat center center scroll;
   background-size: cover;
-  background-position: left;
+  background-position: right;
   height: 20%;
 }
 
@@ -498,7 +491,7 @@ img::-moz-selection {
 .bg-img-section-krokodyl {
   background: url('../img/krokodyl.png') no-repeat center center scroll;
   background-size: cover;
-  background-position: left;
+  background-position: right  ;
   height: 20%;
 }
 
