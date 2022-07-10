@@ -74,11 +74,19 @@ a {
 
   color: $primary;
   &:focus,
+  &:link{
+    color: #8bd4ff;
+  }
   &:hover {
     text-decoration: none;
 
-    color: darken(#8bd4ff, 20%);
+    color: #00A1FF;
   }
+  &:visited{
+
+    color: #8bd4ff;
+  }
+
 }
 
 #mainNav {
