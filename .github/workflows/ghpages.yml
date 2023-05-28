@@ -20,7 +20,7 @@ jobs:
       - name: Build
         run: |
           set -ex
-          npm install --silent
+          npm install
           npx gulp build
           sed -i '/# Build files/q;p' .gitignore
       - name: Deploy to GH Pages
