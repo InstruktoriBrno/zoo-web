@@ -19,6 +19,7 @@ jobs:
             nodejs npm
       - name: Build
         run: |
+          set -ex
           npm install --silent
           npx gulp build
           sed -i '/# Build files/q;p' .gitignore
