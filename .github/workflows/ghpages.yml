@@ -1,0 +1,32 @@
+name: "Build GH pages"
+on:
+  push:
+  pull_request:
+jobs:
+  build_and_update:
+    name: "Build"
+    runs-on: ubuntu-20.04
+    environment: github-pages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Hack sources.list # As the auzure is often unavailable
+        run: sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu/|http://mirror.arizona.edu/ubuntu/|g' /etc/apt/sources.list
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            nodejs npm
+      - name: Build
+        run: |
+          npm install --silent
+          npx gulp build
+          touch .nojekyll
+          rm .gitignore
+      - name: Deploy to GH Pages
+        if: github.ref == 'refs/heads/master'
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages
+          folder: .
+          single-commit: true
